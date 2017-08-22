@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAyB;EACxB,gBAAgB,EAAE,kDAAkD;EACpE,eAAe,EAAE,KAAK;EACtB,iBAAiB,EAAE,SAAS;EAC5B,MAAM,EAAE,IAAI;;AAGb,yBAAyB;EACxB,gBAAgB,EAAE,kDAAkD;EACpE,eAAe,EAAE,KAAK;EACtB,iBAAiB,EAAE,SAAS;EAC5B,MAAM,EAAE,IAAI",
+"sources": ["partials/components/section-images.scss"],
+"names": [],
+"file": "styles.css"
+}
