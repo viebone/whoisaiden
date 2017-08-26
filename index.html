@@ -18,14 +18,12 @@
     </div>
   </header>
 
-  <!-- $$$$$$$$$$$$ -->
-  <!-- CONTENT -->
-  <!-- $$$$$$$$$$$$ -->
+
 
   <!-- $$$$$$$$$$$$ -->
   <!-- DIALOG -->
   <!-- $$$$$$$$$$$$ -->
-<aside id="my-mdc-dialog"
+  <aside id="my-mdc-dialog"
   class="mdc-dialog"
   role="alertdialog"
   aria-labelledby="my-mdc-dialog-label"
@@ -46,10 +44,31 @@
   </div>
   <div class="mdc-dialog__backdrop"></div>
 </aside>
-  <!-- $$$$$$$$$$$$ -->
-  <!-- /DIALOG -->
-  <!-- $$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$ -->
+<!-- /DIALOG -->
+<!-- $$$$$$$$$$$$ -->
 
+<!-- HOME -->
+<div class="mdc-card">
+  <section class="mdc-card__primary">
+    <h1 class="mdc-card__title mdc-card__title--large">Who is Aiden</h1>
+    <h2 class="mdc-card__subtitle">Every little choice can affect your life more than you think</h2>
+  </section>
+  <section id="section-images__home" class="mdc-card__media section-images__home"></section>
+
+  <section class="mdc-card__actions">
+    <button class="mdc-fab material-icons" aria-label="Favorite">
+      <span class="mdc-fab__icon">
+        keyboard_arrow_down
+      </span>
+    </button>
+  </section>
+</div>
+<!-- /HOME -->
+<!-- $$$$$$$$$$$$ -->
+<!-- CONTENT -->
+<!-- $$$$$$$$$$$$ -->
+<div>
 
   <!-- CARD 1 -->
   <div class="mdc-card">
@@ -114,34 +133,36 @@
     </section>
   </div>
   <!-- /CARD 4 -->
+</div>
 
-  <!-- $$$$$$$$$$$$ -->
-  <!-- /CONTENT -->
-  <!-- $$$$$$$$$$$$ -->
+<!-- $$$$$$$$$$$$ -->
+<!-- /CONTENT -->
+<!-- $$$$$$$$$$$$ -->
 
-  <!-- $$$$$$$$$$$$ -->
-  <!-- JAVASCRIPT -->
-  <!-- $$$$$$$$$$$$ -->
-  <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
-  <script>mdc.autoInit()</script>
-  <script>
-var dialog = new mdc.dialog.MDCDialog(document.querySelector('#my-mdc-dialog'));
+<!-- $$$$$$$$$$$$ -->
+<!-- JAVASCRIPT -->
+<!-- $$$$$$$$$$$$ -->
+<script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+<script>mdc.autoInit()</script>
+<script src="js/tools.js"></script>
+<script>
+  var dialog = new mdc.dialog.MDCDialog(document.querySelector('#my-mdc-dialog'));
 
-dialog.listen('MDCDialog:accept', function() {
-  console.log('accepted');
-})
+  dialog.listen('MDCDialog:accept', function() {
+    console.log('accepted');
+  })
 
-dialog.listen('MDCDialog:cancel', function() {
-  console.log('canceled');
-})
+  dialog.listen('MDCDialog:cancel', function() {
+    console.log('canceled');
+  })
 
-document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
-  dialog.lastFocusedTarget = evt.target;
-  dialog.show();
-})
-  </script>
-  <!-- $$$$$$$$$$$$ -->
-  <!-- /JAVASCRIPT -->
-  <!-- $$$$$$$$$$$$ -->
+  document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
+    dialog.lastFocusedTarget = evt.target;
+    dialog.show();
+  })
+</script>
+<!-- $$$$$$$$$$$$ -->
+<!-- /JAVASCRIPT -->
+<!-- $$$$$$$$$$$$ -->
 </body>
 </html>
