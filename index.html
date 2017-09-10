@@ -49,15 +49,15 @@
 <!-- $$$$$$$$$$$$ -->
 
 <!-- HOME -->
-<div class="mdc-card">
+<div id="spa-section-home" class="mdc-card spa-section__home">
   <section class="mdc-card__primary">
     <h1 class="mdc-card__title mdc-card__title--large">Who is Aiden</h1>
     <h2 class="mdc-card__subtitle">Every little choice can affect your life more than you think</h2>
   </section>
-  <section id="section-images__home" class="mdc-card__media section-images__home"></section>
+  <!-- <section id="section-images__home" class="mdc-card__media section-images__home"></section> -->
 
-  <section class="mdc-card__actions section-images__home__actions">
-    <button class="mdc-fab material-icons section-images__home__actions__mdc-fab" aria-label="Favorite">
+  <section class="mdc-card__actions spa-section__home__actions">
+    <button class="mdc-fab material-icons spa-section__home__actions__mdc-fab" aria-label="Favorite">
       <span class="mdc-fab__icon">
         keyboard_arrow_down
       </span>
@@ -70,8 +70,8 @@
 <!-- $$$$$$$$$$$$ -->
 <div>
 
-  <!-- CARD 1 -->
-  <div class="mdc-card spa-section">
+  <!-- SECTION 1 -->
+  <div class="mdc-card spa-section spa-section__template-1">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">The idea</h1>
       <h2 class="mdc-card__subtitle">Every little choice can affect your life more than you think</h2>
@@ -84,9 +84,9 @@
       <button id="default-dialog-activation" class="mdc-button mdc-button--compact mdc-card__action">View more</button>
     </section>
   </div>
-  <!-- /CARD 1 -->
+  <!-- /SECTION 1 -->
 
-  <!-- CARD 2 -->
+  <!-- SECTION 2 -->
   <div class="mdc-card spa-section">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">Synopsis</h1>
@@ -100,9 +100,9 @@
       <button  class="mdc-button mdc-button--compact mdc-card__action">View more</button>
     </section>
   </div>
-  <!-- /CARD 2 -->
+  <!-- /SECTION 2 -->
 
-  <!-- CARD 3 -->
+  <!-- SECTION 3 -->
   <div class="mdc-card spa-section">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">Eduardo Vieitez</h1>
@@ -116,9 +116,9 @@
       <button  class="mdc-button mdc-button--compact mdc-card__action">View website</button>
     </section>
   </div>
-  <!-- /CARD 3 -->
+  <!-- /SECTION 3 -->
 
-  <!-- CARD 4 -->
+  <!-- SECTION 4 -->
   <div class="mdc-card spa-section">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">The producer</h1>
@@ -132,7 +132,7 @@
       <button  class="mdc-button mdc-button--compact mdc-card__action">View website</button>
     </section>
   </div>
-  <!-- /CARD 4 -->
+  <!-- /SECTION 4 -->
 </div>
 
 <!-- $$$$$$$$$$$$ -->
@@ -144,7 +144,7 @@
 <!-- $$$$$$$$$$$$ -->
 <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
 <script>mdc.autoInit()</script>
-<script src="js/tools.js"></script>
+<script src="js/spa.js"></script>
 <script>
   var dialog = new mdc.dialog.MDCDialog(document.querySelector('#my-mdc-dialog'));
 

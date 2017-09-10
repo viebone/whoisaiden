@@ -1,20 +1,3 @@
-.section-images__home{
-	background-image: url("../assets/images/section-image-home.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 90px;
-}
-.section-images__home__actions{
-	position:absolute;
-	bottom:0px;
-	width:100%;
-	flex-direction: row-reverse;
-	padding-right:30px;
-
-	.section-images__home__actions__mdc-fab{
-		
-	}
-}
 .section-images__the-idea{
 	background-image: url("../assets/images/section-image-the-idea.jpg");
 	background-size: cover;
