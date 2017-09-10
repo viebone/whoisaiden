@@ -1,0 +1,39 @@
+.spa-section{
+	margin-top:1em;
+	justify-content: flex-start;
+}
+
+.spa-section__home{
+	background-image: url("../assets/images/section-image-home.jpg");
+	// background-size: cover;
+	background-repeat: no-repeat;
+	// height: 90px;
+	position:relative;
+	justify-content:center;
+
+}
+
+.spa-section__home__content{
+	position:relative;
+}
+
+.spa-section__home__actions{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	flex-direction: row-reverse;
+	padding-right:30px;
+
+	.spa-section__home__actions__mdc-fab{
+		
+	}
+}
+
+.spa-section__template-1{
+	.mdc-card__primary{
+		height: 15%;
+	}
+	.mdc-card__media{
+		height:60%;
+	}
+}
