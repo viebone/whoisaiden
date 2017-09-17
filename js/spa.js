@@ -7,8 +7,6 @@ var spa = {
 		var self = this;
 		//init the spa
 		self.singlePageApplicationInit();
-		//adding click event to the mdc-fab button in the home page
-		self.addListener(document.getElementById('home-mdc-fab'), 'click', self.scrollTo);
 	},
 	//spa init function
 	singlePageApplicationInit : function(){
@@ -30,7 +28,8 @@ var spa = {
 		spa_home_section.style.height = (self.h - vmargin) + "px";
 		//setting the sections height according to screen size minus margin
 		self.setSpaSectionsHeight(spa_sections,self.h-(self.gutter*2));
-		console.log(spa_sections);
+		//setting up the scroll
+		self.setScrollTo();
 	},
 	//function to set the spa sections
 	setSpaSectionsHeight : function(tar,val){
@@ -38,43 +37,18 @@ var spa = {
 			tar[x].style.height = val + "px";
 		}
 	},
-	// function to scroll to a html element
-	scrollIntoView : function(tarID) { 
-		var e = document.getElementById(tarID); 
-		if (!!e && e.scrollIntoView) {
-			e.scrollIntoView();
-		}
-	},
-	//function to add event listener
-	addListener : function(element, eventName, handler) {
-	  if (element.addEventListener) {
-	    element.addEventListener(eventName, handler, false);
-	  }
-	  else if (element.attachEvent) {
-	    element.attachEvent('on' + eventName, handler);
-	  }
-	  else {
-	    element['on' + eventName] = handler;
-	  }
-	},
-	//function to remove event listener
-	removeListener : function(element, eventName, handler) {
-	  if (element.addEventListener) {
-	    element.removeEventListener(eventName, handler, false);
-	  }
-	  else if (element.detachEvent) {
-	    element.detachEvent('on' + eventName, handler);
-	  }
-	  else {
-	    element['on' + eventName] = null;
-	  }
-	},
 	//event handler
-	scrollTo : function(){
-		//self variable
-		var self = this;
-		console.log("eventHandler");
-		self.scrollIntoView('section-1');
+	setScrollTo : function(){
+		console.log("setScrollTo");
+		// Scroll to section 1
+		document.querySelector('.js-btn1').addEventListener('click', () => {
+			scrollIt(
+				document.querySelector('.js-section1'),
+				300,
+				'easeOutQuad',
+				() => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+				);
+		});
 	}
 
 };
