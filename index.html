@@ -16,6 +16,13 @@
         <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
         <span class="mdc-toolbar__title">Who is Aiden</span>
       </section>
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
+        <a href="#" class="scrolltosection-1">Section 1</a>
+        <a href="#" class="scrolltosection-2">Section 2</a>
+        <a href="#" class="scrolltosection-3">Section 3</a>
+        <a href="#" class="scrolltosection-4">Section 4</a>
+      </section>
+      
     </div>
   </header>
 
@@ -58,7 +65,7 @@
   <!-- <section id="section-images__home" class="mdc-card__media section-images__home"></section> -->
 
   <section class="mdc-card__actions spa-section__home__actions">
-    <button id="home-mdc-fab" class="js-btn1 mdc-fab material-icons spa-section__home__actions__mdc-fab" aria-label="Favorite">
+    <button id="home-mdc-fab" class="scrolltosection-1 mdc-fab material-icons spa-section__home__actions__mdc-fab" aria-label="Favorite">
       <span class="mdc-fab__icon">
         keyboard_arrow_down
       </span>
@@ -72,7 +79,7 @@
 <div>
 
   <!-- SECTION 1 -->
-  <div id="section-1" class="js-section1 mdc-card spa-section spa-section__template-1">
+  <div id="section-1" class="mdc-card spa-section spa__section-1 spa-section__template-1">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">The idea</h1>
       <h2 class="mdc-card__subtitle">Every little choice can affect your life more than you think</h2>
@@ -88,7 +95,7 @@
   <!-- /SECTION 1 -->
 
   <!-- SECTION 2 -->
-  <div class="mdc-card spa-section">
+  <div id="section-2" class="mdc-card spa-section spa__section-2">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">Synopsis</h1>
       <h2 class="mdc-card__subtitle">How did I end up like this?</h2>
@@ -104,7 +111,7 @@
   <!-- /SECTION 2 -->
 
   <!-- SECTION 3 -->
-  <div class="mdc-card spa-section">
+  <div id="section-3" class="mdc-card spa-section spa__section-3">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">Eduardo Vieitez</h1>
       <h2 class="mdc-card__subtitle">Director / Writer</h2>
@@ -120,7 +127,7 @@
   <!-- /SECTION 3 -->
 
   <!-- SECTION 4 -->
-  <div class="mdc-card spa-section">
+  <div id="section-4" class="mdc-card spa-section spa__section-4">
     <section class="mdc-card__primary">
       <h1 class="mdc-card__title mdc-card__title--large">The producer</h1>
       <h2 class="mdc-card__subtitle"></h2>
@@ -158,10 +165,10 @@
     console.log('canceled');
   })
 
-  document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
-    dialog.lastFocusedTarget = evt.target;
-    dialog.show();
-  })
+  // document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
+  //   dialog.lastFocusedTarget = evt.target;
+  //   dialog.show();
+  // })
 </script>
 <!-- $$$$$$$$$$$$ -->
 <!-- /JAVASCRIPT -->
