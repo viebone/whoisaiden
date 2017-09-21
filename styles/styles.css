@@ -47,4 +47,16 @@
 .spa-section__template-1 .mdc-card__media {
   height: 60%; }
 
+.spa-tab-bar {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .spa-tab-bar {
+      display: table; } }
+
+.spa-icon-menu {
+  display: none; }
+  @media screen and (max-width: 959px) {
+    .spa-icon-menu {
+      display: inline-block; } }
+
 /*# sourceMappingURL=styles.css.map */
